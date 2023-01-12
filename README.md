@@ -1,7 +1,9 @@
-# 工具介绍
+# FileReverse-Tools
+
 对二进制文件反转、倒置相关的工具，解决CTF和生活中的文件处理问题
 
 # 工具使用
+
 ```
 +-----------------------------------------------------------------------------+
 +                                                                             +
@@ -35,3 +37,57 @@
         -r  --reverse   读取文件十六进制并倒置导出
         -re --reversal  读取文件将双字节反转并导出
 ```
+
+# 工具演示
+
+### 读取Base64的TXT文件解密并导出为文件
+
+```
+python3 FileReverse-Tools.py -b base64.txt
+```
+
+![Base64导出](./pic/base64导出.png)
+
+![Base64导出效果](./pic/base64导出效果.png)
+
+### 读取文件导出为16进制TXT
+
+```
+python3 FileReverse-Tools.py -hh demo.png
+```
+
+![Hex导出](./pic/hex导出.png)
+
+![Hex导出效果](./pic/hex导出效果.png)
+
+**读取十六进制TXT导出为文件，即反向操作，就不展示了**
+
+### 按照双字节读取文件并倒置导出
+
+```
+python3 FileReverse-Tools.py -i demo.png
+```
+
+![Inversion导出](./pic/inversion导出.png)
+
+![Inversion导出效果](./pic/inversion导出效果.png)
+
+### 读取文件十六进制并倒置导出
+
+```
+python3 FileReverse-Tools.py -r demo.png
+```
+
+![Reverse导出](./pic/reverse导出.png)
+
+![Reverse导出效果](./pic/reverse导出效果.png)
+
+### 读取文件将双字节反转并导出
+
+```
+python3 FileReverse-Tools.py -re demo.png
+```
+
+![Reversal导出](./pic/reversal导出.png)
+
+![Reversal导出效果](./pic/reversal导出效果.png)
