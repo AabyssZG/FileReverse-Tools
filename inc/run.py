@@ -25,6 +25,8 @@ def hhex(filename):
 def unhex(filename):
     with open(filename, 'rb') as f:
         content = f.read()
+        if len(content) % 2 != 0:
+            content = content + b'e'
     f2 = open("unhex.bin", "wb+")
     f2.write(binascii.unhexlify(content))
     f2.close()
