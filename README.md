@@ -99,4 +99,5 @@ python3 FileReverse-Tools.py -re demo.png
 ![Reversal导出效果](./pic/reversal导出效果.png)
 
 ## 项目 Star 数量统计趋势图
-[![Stargazers over time](https://starchart.cc/AabyssZG/FileReverse-Tools.svg)](https://starchart.cc/AabyssZG/FileReverse-Tools)
+
+[![Star History Chart](https://api.star-history.com/svg?repos=AabyssZG/FileReverse-Tools&type=Date)](https://star-history.com/#AabyssZG/FileReverse-Tools&Date)
