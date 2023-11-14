@@ -7,6 +7,10 @@ import argparse, sys, time, re, binascii, os
 def baseout(filename):
     with open(filename, 'rb') as f:
         content = f.read()
+    if(len(content)%3 == 1):
+        content += b'=='
+    elif(len(content)%3 == 2):
+        content += b'='
     f2 = open("baseout.bin", "wb+")
     f2.write(binascii.a2b_base64(content))
     f2.close()
