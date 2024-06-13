@@ -22,7 +22,7 @@
 + |_|    |_|_|\___|_|  \_\___| \_/ \___|_|  |___/\___|      |_|\___/ \___/|_| +
 +                                                                             +
 +                                                                             +
-+                               Version: 1.02                                 +
++                               Version: 1.03                                 +
 +                         Author:  曾哥（@AabyssZG）                          +
 +              Whoami:  https://github.com/AabyssZG/FileReverse-Tools         +
 +-----------------------------------------------------------------------------+
@@ -42,6 +42,7 @@
         -i  --inversion 按照双字节读取文件并倒置导出
         -r  --reverse   读取文件十六进制并倒置导出
         -re --reversal  读取文件将双字节反转并导出
+        -a  --arrayout  读取文件导出为16进制数组TXT
 ```
 
 # 工具演示
@@ -97,6 +98,16 @@ python3 FileReverse-Tools.py -re demo.png
 ![Reversal导出](./pic/reversal导出.png)
 
 ![Reversal导出效果](./pic/reversal导出效果.png)
+
+### 读取文件导出为16进制数组TXT
+
+```
+python3 FileReverse-Tools.py -a demo.png
+```
+
+![Arrayout导出](./pic/arrayout导出.png)
+
+![Arrayout导出效果](./pic/arrayout导出效果.png)
 
 ## 项目 Star 数量统计趋势图
 
