@@ -75,8 +75,14 @@ def reversalput(filename):
     sys.exit()
 
 def arrayout(filename):
+    with open(filename, 'rb') as f:
+        content = f.read()
+    f2 = open("hex.txt", "wb+")
+    f2.write(binascii.hexlify(content))
+    f2.close()
+    print(f"[+] 将{filename}文件转换为16进制TXT成功:导出为hex.txt")
     with open('hex.txt', 'r') as input_file:
-    content = input_file.read()
+        content = input_file.read()
     result = ',0x'.join([content[i:i+2] for i in range(0, len(content), 2)])
     result = '0x' + result
     with open('arrayout.txt', 'w') as output_file:
