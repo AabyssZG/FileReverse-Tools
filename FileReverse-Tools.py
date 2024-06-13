@@ -16,6 +16,7 @@ def get_parser():
     p.add_argument("-i", "--inversion", type=str, help="按照双字节读取文件并倒置导出")
     p.add_argument("-r", "--reverse", type=str, help="读取文件十六进制并倒置导出")
     p.add_argument("-re", "--reversal", type=str, help="读取文件将双字节反转并导出")
+    p.add_argument("-a", "--arrayout", type=str, help="读取文件导出为16进制数组TXT")
     args = parser.parse_args()
     return args
 
