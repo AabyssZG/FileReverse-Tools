@@ -73,3 +73,13 @@ def reversalput(filename):
     f2.close()
     print(f"[+] 读取{filename}文件将双字节反转并导出成功:导出为reversal.bin")
     sys.exit()
+
+def arrayout(filename):
+    with open('hex.txt', 'r') as input_file:
+    content = input_file.read()
+    result = ',0x'.join([content[i:i+2] for i in range(0, len(content), 2)])
+    result = '0x' + result
+    with open('arrayout.txt', 'w') as output_file:
+        output_file.write(result)
+    print(f"[+] 将{filename}文件转换为16进制数组TXT成功:导出为arrayout.txt")
+    sys.exit()
