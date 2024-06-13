@@ -18,6 +18,9 @@ def filereverse_console(args):
         run.reverse(args.reverse)
     if args.reversal:
         run.reversal(args.reversal)
+    if args.array:
+        run.hhex(args.array)
+        run.arrayout(args.array)
     else:
         output.usage()
         sys.exit()
